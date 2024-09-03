@@ -1,0 +1,227 @@
+<DOCTYPE html>
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #f0e0e0;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #e0c0c0;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .logo {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    h1 {
+        margin: 20px 0;
+        font-size: 36px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+    
+    main {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .about, .images {
+        background-color: #fff;
+        padding: 20px;
+        border: 2px solid #d0a0a0;
+        width: 45%;
+    }
+    
+    footer {
+        text-align: center;
+        background-color: #e0c0c0;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #d2a5b5;
+            padding: 10px;
+            text-align: center;
+            font-size: 14px;
+        }
+        .carousel {
+            position: relative;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+}
+nav ul li a:hover {
+  background-color: whitesmoke;
+}
+input[name="carousel"] {
+    display: none;
+}
+
+input#slide1:checked ~ .slides {
+    transform: translateX(0%);
+}
+
+input#slide2:checked ~ .slides {
+    transform: translateX(-100%);
+}
+
+input#slide3:checked ~ .slides {
+    transform: translateX(-200%);
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.nav-btn {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+        @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about, .images {
+        width: 90%;
+        height: 90%;
+        margin-bottom: 30px;
+    }
+}
+    
+    
+    </style>
+    
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FINGO</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="Project3LogoFinal.png" alt="FINGO Logo">
+            </div>
+            <h1>FINGO</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="ourmission.html">Our Mission</a></li>
+                <li><a href="whatweuse.html">What We Use</a></li>
+                <li><a href="ourproducts.html">Our Products</a></li>
+                <li><a href="ourvision.html">Our Vision</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="safety.html">Safety</a></li>
+                <li><a href="SiteMap.html">Site Map</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="content">
+                <h2>"Keep your Finances safe when you are on the Go!</h2>
+                <div class="carousel">
+                    <input type="radio" name="carousel" id="slide1" checked>
+                    <input type="radio" name="carousel" id="slide2">
+                    <input type="radio" name="carousel" id="slide3">
+                    
+                    <div class="slides">
+                        <div class="slide" id="s1">
+                            <img src="missionimage1.png" alt="Image 1">
+                        </div>
+                        <div class="slide" id="s2">
+                            <img src="missionimage2.png" alt="Image 2">
+                        </div>
+                        <div class="slide" id="s3">
+                            <img src="project4.gif" alt="Image 3">
+                        </div>
+                    </div>
+                    
+                    <div class="navigation">
+                        <label for="slide1" class="nav-btn">❮</label>
+                        <label for="slide2" class="nav-btn">❯</label>
+                        
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <p>Date updated: July 2024 </p> <p>Email: <a href="mailto:info@fingo.com">info@fingo.com</a></p>
+            </footer>
+        </body>
+        </html>

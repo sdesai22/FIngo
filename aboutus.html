@@ -1,0 +1,159 @@
+<DOCTYPE html>
+    <style>body {
+        font-family: Arial, sans-serif;
+        background-color: #f0e0e0;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #e0c0c0;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .logo {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 150px;
+        height: 150px;
+    }
+    
+    .logo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    h1 {
+        margin: 20px 0;
+        font-size: 36px;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+    nav ul li a:hover {
+        background-color: whitesmoke;
+    }
+    main {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px;
+    }
+    
+    .about, .images {
+        background-color: #fff;
+        padding: 50px;
+        border: 2px solid #d0a0a0;
+        width: 45%;
+        height: auto;
+    }
+    
+    footer {
+        text-align: center;
+        background-color: #e0c0c0;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    
+    footer p {
+        margin: 0;
+    }
+    nav ul li a:hover {
+  background-color: whitesmoke;
+}
+    .images {
+        text-align: center; /* Center-aligns the content within the .images container */
+        padding: 1px; /* Optional padding around the container */
+    }
+    
+    .centered-img {
+        max-width: 100%; /* Ensures the GIF doesn't exceed the width of its container */
+        width: 500px; /* Adjust the width as needed */
+        height: auto; /* Maintains the aspect ratio of the GIF */
+        display: inline-block; /* Allows the GIF to be centered with text-align */
+    }
+    @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about, .images {
+        width: 90%;
+        height: 90%;
+        margin-bottom: 30px;
+    }
+}
+    </style>
+    
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FINGO</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="Project3LogoFinal.png" alt="FINGO Logo">
+            </div>
+            <h1>FINGO</h1>
+            <nav>
+                <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="ourmission.html">Our Mission</a></li>
+                <li><a href="whatweuse.html">What We Use</a></li>
+                <li><a href="ourproducts.html">Our Products</a></li>
+                <li><a href="ourvision.html">Our Vision</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="safety.html">Safety</a></li>
+                <li><a href="SiteMap.html">Site Map</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="about">
+                <h2>About Us</h2>
+                <p>Fingo was created as a solution for keeping your personal belongings and mostly credit cards, drivers licenses or ID with you when going anywhere. Our vision is making the modern day wallet where you can track it with built in tracking device rather than buying a third party tracker. Our name came from Finance on the Go to "FINGO". At fingo we believe in your best interest and making sure your finances are safe on the go!</p>
+            </section>
+            <section class="images">
+                <img src="finance on the go.png" alt="finance.png"class= 'centered-img'>
+            </section>
+        </main>
+        <footer>
+            <p>Date updated: July 2024 </p> <p>Email: <a href="mailto:info@fingo.com">info@fingo.com</a></p>
+        </footer>
+    </body>
+    </html>
